@@ -1,5 +1,5 @@
-﻿using Epsic.Authx.Enums;
-using System;
+﻿using System;
+using Epsic.Authx.Enums;
 
 namespace Epsic.Authx.Models
 {

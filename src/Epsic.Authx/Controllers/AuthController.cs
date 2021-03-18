@@ -42,6 +42,7 @@ namespace Epsic.Authx.Controllers
                     new Claim("Id", user.Id),
                     new Claim(JwtRegisteredClaimNames.Sub, user.Email),
                     new Claim(JwtRegisteredClaimNames.Email, user.Email),
+                    new Claim("School", "EPSIC"),
                 }),
                 Expires = DateTime.UtcNow.AddHours(6),
                 // ici, nous ajoutons l'information sur l'algorithme de cryptage qui sera utilisé pour décrypter notre token.

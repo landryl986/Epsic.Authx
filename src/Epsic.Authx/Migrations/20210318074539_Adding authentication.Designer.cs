@@ -3,14 +3,16 @@ using System;
 using Epsic.Authx.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Epsic.Authx.Migrations
 {
     [DbContext(typeof(CovidDbContext))]
-    partial class CovidDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210318074539_Adding authentication")]
+    partial class Addingauthentication
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
